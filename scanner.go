@@ -184,7 +184,7 @@ func (sshScanner *SSHScanner) ScanAddress() error {
 					data = "Unable to get banner"
 				}
 
-				fmt.Printf("%sshScanner:%d,%sshScanner\n", sshScanner.DestIP.String(), (uint16)(tcp.SrcPort), data)
+				fmt.Printf("%s,%d,%s\n", sshScanner.DestIP.String(), (uint16)(tcp.SrcPort), data)
 
 				return nil
 			}
